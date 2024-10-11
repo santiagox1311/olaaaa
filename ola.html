@@ -1,0 +1,79 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pídeme que sea tu novio</title>
+    <style>
+        body {
+            background-color: #FFC0CB; /* Fondo rosa */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .contenedor {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border: 1px solid #FF69B4;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .titulo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #FF0033;
+        }
+        .mensaje {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .botón {
+            background-color: #FF0033;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .botón:hover {
+            background-color: #CC0000;
+        }
+        .corazón {
+            font-size: 24px;
+            color: #FF0033;
+        }
+        #resultado {
+            font-size: 36px;
+            font-weight: bold;
+            color: #FF0033;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">Puedo ser tu novio? <span class="corazón">&hearts;</span></h1>
+        <p class="mensaje">Gracias por el tiempo compartido, eres especial para mí. Me encanta tu sonrisa, tu sentido del humor y tu forma de ver la vida. Quiero pasar más tiempo contigo y compartir momentos inolvidables. <span class="corazón">&hearts;</span> Te quiero mucho.</p>
+        <button class="botón" onclick="responderSi()">SÍ <span class="corazón">&hearts;</span></button>
+        <button class="botón" onclick="responderNo()">NO</button>
+    </div>
+    <div id="resultado">
+        <h1>Yey, ahora somos novios! <span class="corazón">&hearts;</span></h1>
+    </div>
+    
+    <script>
+        function responderSi() {
+            document.getElementById("resultado").style.display = "block";
+            alert("Yey, ahora somos novios!");
+            // Aquí puedes agregar más funcionalidad
+        }
+        
+        function responderNo() {
+            alert("Gracias por ser honesta. Espero que podamos seguir siendo amigos.");
+            // Aquí puedes agregar más funcionalidad
+        }
+    </script>
+</body>
+</html>
